@@ -1,0 +1,6 @@
+C:\repos\Training\api\RDL00001TrainingBesa\bin\Debug\RDL00001TrainingBesa.dacpac
+C:\repos\Training\api\RDL00001TrainingBesa\bin\Debug\RDL00001TrainingBesa.dll
+C:\repos\Training\api\RDL00001TrainingBesa\bin\Debug\RDL00001TrainingBesa.pdb
+C:\repos\Training\api\RDL00001TrainingBesa\obj\Debug\RDL00001TrainingBesa.dll
+C:\repos\Training\api\RDL00001TrainingBesa\obj\Debug\RDL00001TrainingBesa.pdb
+C:\repos\Training\api\RDL00001TrainingBesa\obj\Debug\RDL00001TrainingBesa.sqlprojAssemblyReference.cache

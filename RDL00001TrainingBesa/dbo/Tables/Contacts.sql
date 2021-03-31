@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Contacts]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
+	[AccountId] UNIQUEIDENTIFIER,
+	[FirstName] NVARCHAR(50),
+	[LastName] NVARCHAR(50),
+	[Phone] NVARCHAR(15),
+	CONSTRAINT FK_Contacts_Account FOREIGN KEY ([AccountId]) REFERENCES dbo.Accounts([Id])
+)
