@@ -6,10 +6,10 @@ GO
 
 /*
 INSERT INTO Accounts (name, Address)
-VALUES ('Britany', 'Boulevard Bella'), 
-('Charleen', 'Chemin Croche'), 
-('Rachel', 'Rue Roan'), 
-('Sindy', 'Street Saraband')
+VALUES ('Banque Mondiale', 'Boulevard Bella'), 
+('Premier Tech', 'Chemin Croche'), 
+('Gouvernement', 'Rue Roan'), 
+('IBM', 'Street Saraband')
 GO
 */
 
@@ -17,10 +17,10 @@ SELECT * FROM Contacts
 GO
 
 /*
-DECLARE @first UNIQUEIDENTIFIER = (SELECT Id FROM Accounts WHERE name = 'Britany')
-DECLARE @second UNIQUEIDENTIFIER = (SELECT Id FROM Accounts WHERE name = 'Charleen')
-DECLARE @third UNIQUEIDENTIFIER = (SELECT Id FROM Accounts WHERE name = 'Rachel')
-DECLARE @fourth UNIQUEIDENTIFIER = (SELECT Id FROM Accounts WHERE name = 'Sindy')
+DECLARE @first UNIQUEIDENTIFIER = (SELECT Id FROM Accounts WHERE name = 'Banque Mondiale')
+DECLARE @second UNIQUEIDENTIFIER = (SELECT Id FROM Accounts WHERE name = 'Premier Tech')
+DECLARE @third UNIQUEIDENTIFIER = (SELECT Id FROM Accounts WHERE name = 'Gouvernement')
+DECLARE @fourth UNIQUEIDENTIFIER = (SELECT Id FROM Accounts WHERE name = 'IBM')
 
 
 INSERT INTO Contacts (AccountId, FirstName, LastName, Phone)

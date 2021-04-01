@@ -11,12 +11,14 @@ namespace PT.TrainningBesa04.Services
 {
     public class ContactsService : IContactsService
     {
-        private IContactsRepository _repository;
+        private IContactsRepository _contactRepo;
+        private IAccountsRepository _accountRepo;
         private IMapper _mapper;
 
-        public ContactsService(IContactsRepository repository, IMapper mapper)
+        public ContactsService(IContactsRepository contactRepo, IMapper mapper, IAccountsRepository accountRepo)
         {
-            _repository = repository;
+            _contactRepo = contactRepo;
+            _accountRepo = accountRepo;
             _mapper = mapper;
         }
 
@@ -32,12 +34,20 @@ namespace PT.TrainningBesa04.Services
 
         public IEnumerable<ContactDto> GetAll()
         {
-            return _mapper.Map<IEnumerable<ContactDto>>(_repository.GetAll().AsEnumerable());  
+            var contactEntities = _contactRepo.GetAll().AsEnumerable();
+            var contactDtos = contactEntities.Select(contactEntity =>
+            {
+                var contactDto = _mapper.Map<ContactDto>(contactEntity);
+                contactDto.AccountName = GetAccountNameById(contactEntity.AccountId);
+                return contactDto;
+            });
+
+            return contactDtos;
         }
 
         public ContactDto GetById(Guid id)
         {
-            Models.Entities.Contact entite = _repository.GetById(id);            
+            Models.Entities.Contact entite = _contactRepo.GetById(id);            
             var dto = _mapper.Map<ContactDto>(entite);
 
             return dto;
@@ -46,6 +56,12 @@ namespace PT.TrainningBesa04.Services
         public void Update(Guid id, ContactDto contactDto)
         {
             throw new NotImplementedException();
+        }
+
+        public string GetAccountNameById(Guid id)
+        {
+            var accountEntity = _accountRepo.GetById(id);
+            return accountEntity.Name;
         }
     }
 }
