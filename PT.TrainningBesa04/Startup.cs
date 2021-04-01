@@ -39,6 +39,8 @@ namespace PT.TrainningBesa04
             services.AddScoped<IAccountsRepository, AccountsRepository>();
             services.AddScoped<Services.IContactsService, ContactsService>();
             services.AddAutoMapper(typeof(Startup));
+            services.AddCors(options => options.AddDefaultPolicy(
+                builder => builder.WithOrigins("http://localhost:4200")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +50,8 @@ namespace PT.TrainningBesa04
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors();
 
             app.UseMvc();
         }

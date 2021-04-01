@@ -316,7 +316,6 @@ C:\repos\Training\api\PT.TrainningBesa04\bin\Debug\net461\System.Xml.XmlDocument
 C:\repos\Training\api\PT.TrainningBesa04\bin\Debug\net461\System.Xml.XmlSerializer.dll
 C:\repos\Training\api\PT.TrainningBesa04\bin\Debug\net461\System.Xml.XPath.dll
 C:\repos\Training\api\PT.TrainningBesa04\bin\Debug\net461\System.Xml.XPath.XDocument.dll
-C:\repos\Training\api\PT.TrainningBesa04\obj\Debug\net461\PT.TrainningBesa04.csprojAssemblyReference.cache
 C:\repos\Training\api\PT.TrainningBesa04\obj\Debug\net461\PT.TrainningBesa04.exe.config
 C:\repos\Training\api\PT.TrainningBesa04\obj\Debug\net461\PT.TrainningBesa04.AssemblyInfoInputs.cache
 C:\repos\Training\api\PT.TrainningBesa04\obj\Debug\net461\PT.TrainningBesa04.AssemblyInfo.cs
