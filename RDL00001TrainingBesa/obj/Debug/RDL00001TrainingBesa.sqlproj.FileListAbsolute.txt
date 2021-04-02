@@ -3,3 +3,7 @@ C:\repos\Training\api\RDL00001TrainingBesa\bin\Debug\RDL00001TrainingBesa.dll
 C:\repos\Training\api\RDL00001TrainingBesa\bin\Debug\RDL00001TrainingBesa.pdb
 C:\repos\Training\api\RDL00001TrainingBesa\obj\Debug\RDL00001TrainingBesa.dll
 C:\repos\Training\api\RDL00001TrainingBesa\obj\Debug\RDL00001TrainingBesa.pdb
+C:\repos\Training\api\RDL00001TrainingBesa\obj\Debug\Model.xml
+C:\repos\Training\api\RDL00001TrainingBesa\obj\Debug\refactor.xml
+C:\repos\Training\api\RDL00001TrainingBesa\obj\Debug\postdeploy.sql
+C:\repos\Training\api\RDL00001TrainingBesa\obj\Debug\predeploy.sql
