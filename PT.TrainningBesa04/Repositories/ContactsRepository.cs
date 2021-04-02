@@ -19,12 +19,19 @@ namespace PT.TrainningBesa04.Repositories
         public void Create(Contact contact)
         {
             _context.Contacts.Add(contact);
+            SaveChanges();
         }
 
         public void Delete(Guid id)
         {
             var contact = GetById(id);
             _context.Contacts.Remove(contact);
+            SaveChanges();
+        }
+
+        public void Update(Contact contact)
+        {
+            _context.Contacts.Update(contact);
         }
 
         public IQueryable<Contact> GetAll()

@@ -12,6 +12,7 @@ namespace PT.TrainningBesa04.Repositories
         Contact GetById(Guid id);
         void Create(Contact contact);
         void Delete(Guid id);
+        void Update(Contact contact);
         void SaveChanges();
     }
 }

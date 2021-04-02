@@ -37,6 +37,11 @@ namespace PT.TrainningBesa04.Repositories
             return _context.Accounts.FirstOrDefault(_ => _.Id == id);
         }
 
+        public Account GetByName(string accountName)
+        {
+            return _context.Accounts.FirstOrDefault(_ => _.Name == accountName);
+        }
+
         public void SaveChanges()
         {
             _context.SaveChanges();

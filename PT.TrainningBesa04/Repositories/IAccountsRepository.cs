@@ -10,6 +10,7 @@ namespace PT.TrainningBesa04.Repositories
     {
         IQueryable<Account> GetAll();
         Account GetById(Guid id);
+        Account GetByName(string accountName);
         void Create(Account account);
         void Delete(Guid id);
         void SaveChanges();

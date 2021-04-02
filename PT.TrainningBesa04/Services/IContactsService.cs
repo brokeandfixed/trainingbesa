@@ -11,7 +11,7 @@ namespace PT.TrainningBesa04.Services
         IEnumerable<ContactDto> GetAll();
         ContactDto GetById(Guid id);
         void Create(ContactDto contactDto);
-        void Update(Guid id, ContactDto contactDto);
+        void Update(ContactDto contactDto);
         void Delete(Guid id);
     }
 }

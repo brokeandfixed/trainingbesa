@@ -27,7 +27,7 @@ namespace PT.TrainningBesa04.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult Get(string id)
+        public IActionResult GetById(string id)
         {
             var contact = _service.GetById(Guid.Parse(id));
             return Ok(contact);
@@ -41,16 +41,16 @@ namespace PT.TrainningBesa04.Controllers
         }
 
         [HttpDelete]
-        public IActionResult Delete(string id)
+        public IActionResult Delete(Guid id)
         {
-            _service.Delete(Guid.Parse(id));
+            _service.Delete(id);
             return Ok();
         }
 
         [HttpPost]
         public IActionResult Update(ContactDto dto)
         {
-            _service.Create(dto);
+            _service.Update(dto);
             return Ok();
         }
 
